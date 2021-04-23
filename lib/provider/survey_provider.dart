@@ -46,6 +46,7 @@ class SurveyProvider with ChangeNotifier {
 
   void previousQuestion() {
     _currentQuestion -= 1;
+    if (_currentQuestion < 0) _currentQuestion = 0;
     notifyListeners();
   }
 

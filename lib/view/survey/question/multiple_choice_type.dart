@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:oodles/constants/app_colors.dart';
 import 'package:oodles/model/survey.dart';
+import 'package:oodles/view/survey/widgets/question_header.dart';
 
 class MultipleChoiceType extends StatelessWidget {
   const MultipleChoiceType({
@@ -16,22 +17,7 @@ class MultipleChoiceType extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         SizedBox(height: 15),
-        Container(
-          padding: EdgeInsets.symmetric(horizontal: 25),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                field.title,
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
-              ),
-              Text(
-                field.properties.description,
-                style: TextStyle(fontWeight: FontWeight.w300, fontSize: 20),
-              ),
-            ],
-          ),
-        ),
+        QuestionHeader(field: field),
         SizedBox(height: 15),
         Container(
           height: 500,

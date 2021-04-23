@@ -12,7 +12,7 @@ class SurveyBottomBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Consumer<SurveyProvider>(builder: (ctx, surveyProvider, _) {
-      final percentage = (surveyProvider.currentQuestion /
+      final percentage = ((surveyProvider.currentQuestion + 1) /
               surveyProvider.survey?.fields?.length) *
           100;
       return !surveyProvider.surveyStarted || surveyProvider.surveyCompleted
@@ -32,7 +32,7 @@ class SurveyBottomBar extends StatelessWidget {
                           Padding(
                             padding: const EdgeInsets.only(left: 6, bottom: 3),
                             child: Text(
-                              '$percentage% completed',
+                              '${percentage.toInt()}% completed',
                               style:
                                   TextStyle(fontSize: 15, color: Colors.grey),
                             ),

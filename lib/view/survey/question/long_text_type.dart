@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:oodles/view/survey/widgets/question_header.dart';
 
 import '../../../model/survey.dart';
 
@@ -23,24 +24,7 @@ class _LongTextTypeState extends State<LongTextType> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         SizedBox(height: 15),
-        Container(
-          padding: EdgeInsets.symmetric(horizontal: 25),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                widget.field.title,
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
-              ),
-              SizedBox(height: 5),
-              Text(
-                widget.field.properties.description,
-                style: TextStyle(fontWeight: FontWeight.w300, fontSize: 20),
-              ),
-              SizedBox(height: 15),
-            ],
-          ),
-        ),
+        QuestionHeader(field: widget.field),
         SizedBox(height: 15),
         Container(
           padding: EdgeInsets.symmetric(horizontal: 25, vertical: 25),

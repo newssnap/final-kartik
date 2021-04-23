@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:oodles/constants/app_colors.dart';
 import 'package:oodles/model/survey.dart';
+import 'package:oodles/view/survey/widgets/question_header.dart';
 
 class RankingType extends StatefulWidget {
   const RankingType({
@@ -21,27 +22,8 @@ class _RankingTypeState extends State<RankingType> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         SizedBox(height: 15),
-        Container(
-          padding: EdgeInsets.symmetric(horizontal: 25),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                widget.field.title,
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
-              ),
-              Text(
-                widget.field.properties.description,
-                style: TextStyle(fontWeight: FontWeight.w300, fontSize: 20),
-              ),
-              SizedBox(height: 15),
-              Text(
-                'Drag and drop to rank options',
-                style: TextStyle(fontWeight: FontWeight.normal, fontSize: 16),
-              ),
-            ],
-          ),
-        ),
+        QuestionHeader(
+            field: widget.field, info: 'Drag and drop to rank options'),
         SizedBox(height: 15),
         Container(
           height: 500,

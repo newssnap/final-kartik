@@ -21,6 +21,7 @@ class MyApp extends StatelessWidget {
         ],
         child: MaterialApp(
           title: 'NITL',
+          debugShowCheckedModeBanner: false,
           theme: ThemeData(primaryColor: AppColors.blue),
           home: HomeScreen(),
         ));

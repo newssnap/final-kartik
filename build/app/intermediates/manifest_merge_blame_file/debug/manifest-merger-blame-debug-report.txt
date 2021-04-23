@@ -30,8 +30,8 @@
 25        android:debuggable="true"
 26        android:icon="@mipmap/ic_launcher"
 26-->/Users/kartikthakur/Projects/fluttery/test/final-kartik/android/app/src/main/AndroidManifest.xml:11:9-43
-27        android:label="oodles" >
-27-->/Users/kartikthakur/Projects/fluttery/test/final-kartik/android/app/src/main/AndroidManifest.xml:10:9-31
+27        android:label="NITL" >
+27-->/Users/kartikthakur/Projects/fluttery/test/final-kartik/android/app/src/main/AndroidManifest.xml:10:9-29
 28        <activity
 28-->/Users/kartikthakur/Projects/fluttery/test/final-kartik/android/app/src/main/AndroidManifest.xml:12:9-40:20
 29            android:name="com.test.oodles.MainActivity"
