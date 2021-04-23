@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:oodles/constants/app_colors.dart';
-import 'package:oodles/provider/survey_provider.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 import 'package:provider/provider.dart';
+
+import '../../../constants/app_colors.dart';
+import '../../../provider/survey_provider.dart';
 
 class SurveyBottomBar extends StatelessWidget {
   const SurveyBottomBar({

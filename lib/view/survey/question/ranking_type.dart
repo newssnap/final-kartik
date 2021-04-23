@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:oodles/constants/app_colors.dart';
-import 'package:oodles/model/survey.dart';
-import 'package:oodles/view/survey/widgets/question_header.dart';
+
+import '../../../constants/app_colors.dart';
+import '../../../model/survey.dart';
+import '../widgets/question_header.dart';
 
 class RankingType extends StatefulWidget {
   const RankingType({

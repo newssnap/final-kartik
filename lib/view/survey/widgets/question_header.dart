@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:oodles/model/survey.dart';
+
+import '../../../model/survey.dart';
 
 class QuestionHeader extends StatelessWidget {
   const QuestionHeader({

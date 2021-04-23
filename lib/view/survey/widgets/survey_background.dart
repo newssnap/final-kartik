@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:oodles/provider/survey_provider.dart';
 import 'package:provider/provider.dart';
+
+import '../../../provider/survey_provider.dart';
 
 class SurveyBackground extends StatelessWidget {
   const SurveyBackground({

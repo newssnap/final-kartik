@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:oodles/view/survey/widgets/question_header.dart';
 
 import '../../../model/survey.dart';
+import '../widgets/question_header.dart';
 
 class OpinionScaleType extends StatefulWidget {
   const OpinionScaleType({

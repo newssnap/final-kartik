@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:oodles/model/survey.dart';
+
+import '../../../model/survey.dart';
+import '../widgets/question_header.dart';
 
 class PictureChoiceType extends StatelessWidget {
   const PictureChoiceType({
@@ -14,6 +16,9 @@ class PictureChoiceType extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
+        SizedBox(height: 15),
+        QuestionHeader(field: field, info: 'Tap to choose.'),
+        SizedBox(height: 15),
         Container(
           height: 500,
           child: GridView.builder(
@@ -52,23 +57,6 @@ class PictureChoiceType extends StatelessWidget {
                 ),
               );
             },
-          ),
-        ),
-        Container(
-          padding: EdgeInsets.symmetric(horizontal: 15),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                'Tap to choose.',
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
-              ),
-              SizedBox(height: 15),
-              Text(
-                field.title,
-                style: TextStyle(fontWeight: FontWeight.w300, fontSize: 20),
-              ),
-            ],
           ),
         ),
       ],
